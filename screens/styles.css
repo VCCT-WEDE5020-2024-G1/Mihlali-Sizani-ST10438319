@@ -116,20 +116,7 @@ section {
     margin-top: 10px;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-}
 
-footer nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
 
 
 .section-bg {
@@ -302,8 +289,11 @@ footer {
 }
 
 
-
-
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between links as needed */
+}
 
 
 
