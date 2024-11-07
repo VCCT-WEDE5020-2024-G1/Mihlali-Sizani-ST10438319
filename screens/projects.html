@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styles.css">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Green Futures Initiative</title>
-    <style>
-        body{
-            background-image: url(/_images/gardining\ .png);
-            height: 100;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+    <meta name="description" content="Discover the impactful projects of Green Futures Initiative, transforming urban spaces through community gardens, reforestation, sustainable housing workshops, and more in Cape Town.">
+    <meta name="keywords" content="Green Futures Initiative, sustainable projects, urban gardens, reforestation, waste reduction, recycling workshops, eco-friendly, Cape Town NGO">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Green Futures Initiative",
+      "url": "https://www.yourwebsite.com",
+      "logo": "https://www.yourwebsite.com/_images/green.png",
+      "description": "Green Futures Initiative promotes sustainable urban environments in Cape Town through projects like community gardens, urban reforestation, and recycling workshops.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cape Town",
+        "addressCountry": "ZA"
+      }
+    }
+    </script>
 </head>
 
-<body>
+<body class="projects-page">
     <header>
         <img src="/_images/green.png" alt="Green Futures Initiative Logo" style="height: 50px;">
         <h1>Green Futures Initiative</h1>
@@ -32,7 +40,7 @@
         <h2>Our Projects</h2>
 
         <h3>1. Urban Community Gardens</h3>
-        <img src="/_images/plant.fgh.png" alt="planting vegetables" style="width:300px; height:auto;" />
+        <img src="/_images/community-gardening.jpg" alt="Urban Community Garden Planting in Cape Town by Green Futures Initiative" style="width:300px; height:auto;" loading="lazy" />
         <p>
             Our Urban Community Gardens initiative revitalizes vacant lots into lush, productive gardens that provide fresh produce and green space for urban residents. These gardens not only enhance local food security but also foster community spirit and environmental stewardship.
         </p>
@@ -51,7 +59,7 @@
         <p><strong>Case Study:</strong> In Woodstock, we revitalized an abandoned lot into a thriving garden that provides fresh produce and serves as a community hub, fostering connections among neighbors.</p>
 
         <h3>2. Green Schoolyards Initiative</h3>
-        <img src="/_images/playground.png" alt="school playground" style="width:300px; height:auto;" />
+        <img src="/_images/school-planting.jpeg" alt="Eco-friendly school playground transformed by Green Futures Initiative" style="width:300px; height:auto;" loading="lazy" />
         <p>
             The Green Schoolyards Initiative partners with schools to transform their outdoor spaces into interactive, eco-friendly learning environments. These green spaces support environmental education and engage students in sustainable practices from an early age.
         </p>
@@ -70,9 +78,9 @@
         <p><strong>Case Study:</strong> At Mitchells Plain Primary, we converted a barren playground into a vibrant garden and outdoor classroom, enriching science lessons and involving students in garden maintenance.</p>
 
         <h3>3. Waste Reduction and Recycling Workshops</h3>
-        <img src="/_images/recycle.png" alt="recycling" style="width:300px; height:auto;" />
+        <img src="/_images/reycling.jpg" alt="Waste Reduction and Recycling Workshop by Green Futures Initiative" style="width:300px; height:auto;" loading="lazy" />
         <p>
-            Our Waste Reduction and Recycling Workshops teach urban residents how to minimize waste, recycle effectively, and compost at home. These workshops empower communities to adopt sustainable practices and reduce their environmental footprint.
+            Our Waste Reduction and Recycling Workshops teach urban residents how to minimize waste and adopt <a href="about.html">sustainable practices</a> to reduce environmental impact.
         </p>
         <p><strong>Goals:</strong></p>
         <ul>
@@ -88,43 +96,7 @@
         </ul>
         <p><strong>Case Study:</strong> In Khayelitsha, our workshops led to the establishment of a community-managed recycling center, fostering local recycling and providing economic benefits.</p>
 
-        <h3>4. Urban Reforestation Project</h3>
-        <img src="/_images/planting tree.png" alt="planting a tree" style="width:300px; height:auto;" />
-        <p>
-            The Urban Reforestation Project aims to enhance urban environments by planting trees to improve air quality and provide green spaces. This initiative also includes community education on the benefits of trees in cities.
-        </p>
-        <p><strong>Goals:</strong></p>
-        <ul>
-            <li>Expand tree canopy in urban areas.</li>
-            <li>Improve air quality and reduce heat island effects.</li>
-            <li>Engage the community in tree planting and care.</li>
-        </ul>
-        <p><strong>Impact:</strong></p>
-        <ul>
-            <li>Planted over 2,000 trees in urban neighborhoods.</li>
-            <li>Organized tree care workshops for 500 community members.</li>
-            <li>Collaborated with local authorities for long-term tree maintenance.</li>
-        </ul>
-        <p><strong>Case Study:</strong> In Salt River, our project planted 500 trees, significantly cooling local temperatures and enhancing the area's green infrastructure.</p>
-
-        <h3>5. Sustainable Housing Workshops</h3>
-        <img src="/_images/wooden box.png" alt="eco-friendly living" style="width:300px; height:auto;" />
-        <p>
-            Our Sustainable Housing Workshops guide residents in making their homes more energy-efficient and environmentally friendly. Topics include renewable energy, water conservation, and eco-friendly building practices.
-        </p>
-        <p><strong>Goals:</strong></p>
-        <ul>
-            <li>Encourage sustainable living practices in urban homes.</li>
-            <li>Reduce energy and water consumption.</li>
-            <li>Increase awareness of renewable energy and green building options.</li>
-        </ul>
-        <p><strong>Impact:</strong></p>
-        <ul>
-            <li>Trained 800 individuals on sustainable housing practices.</li>
-            <li>Helped 100 households install solar panels and rainwater systems.</li>
-            <li>Achieved a 15% reduction in energy use in participating homes.</li>
-        </ul>
-        <p><strong>Case Study:</strong> In Cape Town’s Southern Suburbs, our workshops led to significant home retrofits, lowering utility bills and reducing the community’s carbon footprint.</p>
+        <p><a href="get_involved.html">Get Involved in Cape Town's Green Transformation</a> and make a difference with the Green Futures Initiative.</p>
     </main>
 
     <footer>
@@ -135,6 +107,19 @@
         <a href="contact_us.html">Contact Us</a>
     </footer>
 
+    <script>
+        window.onscroll = function() {stickyNav()};
+    
+        var navbar = document.querySelector("header");
+        var sticky = navbar.offsetTop;
+    
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
-
 </html>

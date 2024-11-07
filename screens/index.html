@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styles.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description" content="Green Futures Initiative promotes sustainable practices and green urban spaces in Cape Town. Join our mission to create a healthier environment!">
+    <meta name="keywords" content="sustainable practices, urban agriculture, green spaces, Cape Town, environmental education">
+    <meta name="robots" content="index, follow">
+    <title>Green Futures Initiative | Sustainable Urban Solutions for Cape Town</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="icon" href="/_images/green-icon.png" type="image/png">
+    <!-- Open Graph tags for social media optimization -->
+    <meta property="og:title" content="Green Futures Initiative - Sustainable Urban Solutions">
+    <meta property="og:description" content="Promoting green spaces and sustainable living in urban areas across Cape Town.">
+    <meta property="og:image" content="https://www.greenfutures.org/_images/green.png">
+    <meta property="og:url" content="https://www.greenfutures.org">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/_images/green-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 
 <body>
     <header>
         <img src="/_images/green.png" alt="Green Futures Initiative Logo" style="height: 50px;">
         <h1>Green Futures Initiative</h1>
         <nav>
-
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="get_involved.html">Get Involved</a>
             <a href="contact_us.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
         <h2>Cultivating Urban Sustainability, One Community at a Time</h2>
-
-        <div class="full-width-container">
-            <img src="/_images/nature_resized.9.jpg" alt="Full-width Image" style="height: 400px; width: 1500px;">
+    
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/_images/diverse.avif" alt="Community engaging in sustainable urban agriculture projects" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="/_images/Sustainable-Practices.jpg" alt="Community engaging in sustainable urban agriculture projects" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="/_images/Sustainable-Living.jpg" alt="Community engaging in sustainable urban agriculture projects" style="width:100%">
+            </div>
         </div>
         
     
-        
-        <p>
-            Green Futures Initiative is dedicated to promoting sustainable environmental practices and education in urban communities. Our focus is on improving green spaces, supporting urban agriculture, and educating the public on environmental stewardship.
+        <p class="larger-text">
+            Green Futures Initiative promotes sustainable practices and environmental education in Cape Town's urban communities, focusing on green spaces, urban agriculture, and environmental stewardship.
         </p>
     
+        <section>
+            <h3>Our Vision for a Sustainable Future in Cape Town</h3>
+            <p>We aim to create vibrant, sustainable urban environments that support healthy communities. Our projects foster green living, support local agriculture, and encourage environmental education across Cape Town.</p>
+        </section>
+
+
+        <section class="newsletter">
+            <h3>Stay Connected</h3>
+            <p>Sign up for our newsletter to receive updates on our latest projects and upcoming events!</p>
+            <form action="#">
+                <input type="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+            </form>
+            <div class="social-links">
+                <a href="https://facebook.com/greenfutures" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/greenfutures" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/greenfutures" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSewxizewfemfiBqHXq_5SSaeaThG7aZ1g8MBDBcGuKpJZfW2Q/viewform?embedded=true" width="640" height="870" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    
     </main>
+    
+
     <footer>
-        
         <p>Phone: (123) 456-7890</p>
         <p>Email: <a href="mailto:contact@greenfutures.org">contact@greenfutures.org</a></p>
         <p>Address: 8001 Green Street, Cape Town, IL 62704</p>
@@ -47,6 +91,46 @@
         <a href="get_involved.html">Get Involved</a>
         <a href="contact_us.html">Contact Us</a>
     </footer>
+
+    <script>function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        Array.from(slides).forEach(slide => slide.style.display = "none");
+        slideIndex = (slideIndex % slides.length) + 1;
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Slide changes every 5 seconds
+    }
+    </script>
+
+
+    <script>let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 9000); // Change image every 9 seconds
+        }
+        </script>
+
+    <script>
+        window.onscroll = function() {stickyNav()};
+    
+        var navbar = document.querySelector("header");
+        var sticky = navbar.offsetTop;
+    
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
